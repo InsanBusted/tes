@@ -1,0 +1,130 @@
+/* navbar */
+:root {
+    --primary: #E48F45;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+nav {
+    /* width: 100vw; */
+}
+
+h1,i {
+    color: white;
+}
+
+.navbar {
+    background: transparent;
+}
+
+a {
+    position: relative;
+  }
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+
+
+  
+.navbar-nav .nav-link:hover {
+    color: black;
+}
+
+a::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background-color: #E48F45;
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+        }
+  
+span {
+    color: var(--primary);
+}
+a:hover::before {
+    transform-origin: center;
+    transform: scaleX(1);
+  }
+
+/* end navbar */
+
+/* konten */
+
+.foto-home {
+    /* height: 100vh;
+    width: 100vw; */
+    background-image: url(../img/rumah.jpeg);
+    background-size: cover; 
+    background-position: 40% 60%;
+    background-color: rgb(255, 255, 255);
+}
+
+.latar {
+    /* height: 100vh;
+    width: 100vw; */
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.fs-1 {
+    font-size: 4rem !important;
+}
+
+.mt-5 {
+    margin-top:10rem !important;
+}
+
+.circle {
+    background-color: #E48F45;
+    width: 6em;
+    height: 6em;
+    margin-bottom: -3.7rem;
+    margin-left: -1.7rem;
+    }
+
+.circle-dua{
+    background-color: #E48F45;
+    width: 2em;
+    height: 2em;
+    margin-top: -0.7rem;
+    margin-left: 21rem;
+
+}
+
+.judul-home {
+    color: white;
+}
+
+.sub-judul {
+    color: rgb(231, 229, 229);
+}
+
+/* isi konten */
+.isi-konten {
+    height: 100vh;
+    width: 100vw;
+    background-color: #FAEED1;
+}
+
+
+.circle-img {
+    background-color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.card  {
+    background-color: #DED0B6;
+}
+
+
